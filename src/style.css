@@ -6,31 +6,114 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #54017d;
+    color: #fff;
     line-height: 1.6;
-    padding: 20px;
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.home-main {
+    display: flex;
+    gap: 30px;
+}
+
+.rotating-images {
+    width: 20%;
+    min-width: 180px;
+    max-width: 250px;
+}
+
+.rotating-images img {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+body, html {
+    width: 100%;
 }
 
 header {
-    background-color: #111;
+    background-color: #fff;
     color: white;
-    padding: 20px;
+    padding: 0px;
+    width: 100%;
+    position: relative;
 }
 
-header h1 {
-    margin-bottom: 10px;
+.header-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    background-color: white;
+    padding: 0;
+}
+
+.logo-container {
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+}
+
+.nav-container {
+    flex: 1;
+    background-color: #e67e22;
+    display: flex;
+    align-items: flex-end;
+    height: fit-content;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
+nav li {
+    border: 2px solid black;
+    border-left: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav li:first-child {
+    border-left: 2px solid black;
+}
 nav a {
-    color: white;
+    color: #111;
     text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+nav li:hover a {
+    color: orange;
 }
 
 nav a:hover {
@@ -46,10 +129,37 @@ main h2 {
 }
 
 footer {
-    margin-top: 50px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
-    text-align: center;
-    color: #666;
-    font-size: 14px;
+   width: 100%;
+   background-color: #e67e22;
+   padding: 20px;
+   color: #111;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+.footer-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: text-decoration 0.3s ease;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    height: 100px;
+    width: auto;
 }

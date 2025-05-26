@@ -3,32 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FakeClothing Co.</title>
+    <title>Home|FakeClothing Co.</title>
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
 
     <header>
-        <h1>FakeClothing Co.</h1>
-        <nav>
-            <ui>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Sign In</a></li>
-            </ui>
-        </nav>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="../public/FakeLogoHeader.png" alt="FakeClothing Logo" class="logo">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="community.html">COMMUNITY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html">SIGN IN</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Welcome to FakeClothing Co.</h2>
-            <p>Discover your style. Shop our latest collection of premium streetwear designed for comfort, individuality, and everyday confidence.</p>
-        </section>
+
+    <main class="home-main">
+        <div class="rotating-images">
+            <img src="../public/maninshirt.png" alt="Featured Product" id="rotating-image">
+        </div>
+        <div class="home-content">
+            <section>
+                <h2>Welcome to FakeClothing Co.</h2>
+                <p>Discover your style. Shop our latest collection of premium streetwear designed for comfort, individuality, and everyday confidence.</p>
+            </section>
+            <section class="announcement">
+                <img src="../public/Anouncement.png" alt="Anouncement" class="add">
+            </section>
+        </div>
     </main>
 
     <footer>
+        <div class="footer-container">
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Sign in</a></li>
+                <li><a href="admin-login.html">Admin Login</a></li>
+            </ul>
+            <img src="../public/Fakelogo.png" alt="FakeClothing Logo" class="footer-logo">
+        </div>
         <p>&copy; 2025 FakeClothing Co. All rights reserved.</p>
     </footer>
 
