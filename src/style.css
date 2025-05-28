@@ -11,6 +11,8 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -88,6 +90,9 @@ main {
 
 body, html {
     width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
 header {
@@ -240,37 +245,47 @@ footer {
 }
 
 .product-main {
-    padding: 40px 20px;
+    padding: 20px;
+    position: relative;
+    flex-direction: row;
 }
 
 .product-layout {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
 }
 
 .product-image {
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex: 1;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.product-name {
+    color: black;
 }
 
 .product-image img {
-    max-width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .product-info {
     text-align: center;
+    color: #111;
 }
 
 .product-price {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 10px 0;
+    color: black;
 }
 
 .add-to-cart {
@@ -280,6 +295,35 @@ footer {
     border: none;
     cursor: pointer;
     border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.size-list {
+    flex-direction: column;
+    margin-top: 20px;
+}
+.size-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.size-button {
+    background-color: #e67e22;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.size-button:hover {
+    background-color: #111;
+    color: orange;
 }
 
 .add-to-cart:hover {
@@ -288,7 +332,18 @@ footer {
 }
 
 .product-description {
-    flex: 2 1 500px;
+    flex: 1;
+    background-color: white;
+    border-radius: 6px;
+    color: black;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-options {
+    flex: 1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
 }
 
 @media (max-width: 900px) {
@@ -299,4 +354,115 @@ footer {
     .home-content {
         flex: 1 1 100%;
     }
+}
+
+.community-main {
+    flex: 1;
+    display: flex;
+    padding: 20px;
+    position: relative;
+    flex-direction: column;
+}
+
+.messages-board {
+    max-width: 600px;
+    min-height: 70%;
+    min-width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messages-board form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.messages-board textarea {
+    flex: 1;
+    resize: vertical;
+    min-width: 80%;
+    min-height: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#messages-list {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#messages-list li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid orange;
+}
+
+.community-footer {
+    background: #ffa500;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+
+.post-button {
+    background-color: #e67e22;
+    color: black;
+    padding: 1%;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.post-button:hover {
+    background-color: #111;
+    color: orange;
+}
+
+.Socail-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+    background-color: white;
+    flex: none;
+    z-index: 1;
+    position: relative;
+    max-height: 20%;
+    margin: 30px;
+    border-radius: 6px;
+    color: black;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Socail-links img {
+    flex: 1;
+    max-width: 40%;
+    max-height: 40%;
 }
