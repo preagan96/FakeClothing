@@ -27,10 +27,26 @@
         </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Welcome to FakeClothing Co.</h2>
-            <p>Discover your style. Shop our latest collection of premium streetwear designed for comfort, individuality, and everyday confidence.</p>
+    <main class="login-main">
+        <section class="login-container">
+            <form action="#" method="post" class="create-form">
+                <p>Create Account</p>
+                <label for="email">Your E-mail</label><br>
+                <textarea id="email" name="message" rows="1" cols="30" placeholder="Enter your E-mail address"></textarea><br>
+                <label for="set-pass">Create a Password</label><br>
+                <textarea id="set-pass" name="set-pass" rows="1" cols="30" placeholder="Create your Password"></textarea><br>
+                <label for="verify-pass">Verify your Password</label><br>
+                <textarea id="verify-pass" name="verify-pass" rows="1" cols="30" placeholder="Verify your Password"></textarea><br>
+                <button class="post-button" type="submit">Create Account</button>
+            </form>
+            <form action="#" method="post" class="login-form">
+                <p>Sign In</p>
+                <label for="email">Your E-mail</label><br>
+                <textarea id="email" name="message" rows="1" cols="30" placeholder="Enter your E-mail address"></textarea><br>
+                <label for="enter-pass">Enter your Password</label><br>
+                <textarea id="enter-pass" name="enter-pass" rows="1" cols="30" placeholder="Enter your Password"></textarea><br>
+                <button class="post-button" type="submit">Sign In</button>
+            </form>
         </section>
     </main>
 

@@ -437,11 +437,11 @@ footer {
     color: orange;
 }
 
-.Socail-links {
+.links-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     padding: 20px;
     border-top: 2px solid #ddd;
     background-color: white;
@@ -449,12 +449,25 @@ footer {
     z-index: 1;
     position: relative;
     max-height: 20%;
+    max-width: 90%;
     margin: 30px;
     border-radius: 6px;
     color: black;
 }
+.Socail-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+    flex: none;
+    z-index: 1;
+    position: relative;
+    max-height: 65%;
+    max-width: 65%;
+}
 
-.social-links a {
+.Socail-links a {
     margin: 0 10px;
     color: black;
     text-decoration: none;
@@ -462,7 +475,104 @@ footer {
 }
 
 .Socail-links img {
-    flex: 1;
     max-width: 40%;
     max-height: 40%;
+    width: 00px;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20%;
+    background-color: #54017d;
+}
+
+.contact-form {
+    color: black;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    border-radius: 6pt;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form textarea {
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #54017d;
+}
+
+.login-container {
+    color: black;
+    align-items: center;
+    background-color: white;
+    border-radius: 6pt;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    max-width: 90%;
+    max-height: 90%;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.login-container p {
+    font-size: larger;
+    width: fit-content;
+}
+
+.create-form {
+    border-right: 2px solid #111;
+    width: fit-content;
+    flex: 1;
+    padding: 10px;
+}
+
+.login-form {
+    padding: 10px;
+    flex: 1;
+}
+.create-form textarea {
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+.login-form textarea {
+    border-radius: 6px;
+    border: 2px solid black;
+
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.header-admin{
+    background-color: #9eaca9;
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    padding: 0;
+}
+
+.nav-admin{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    background-color: white;
+    padding: 0;
 }
