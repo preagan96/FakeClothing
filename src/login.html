@@ -20,9 +20,13 @@
                         <li><a href="shop.html">SHOP</a></li>
                         <li><a href="community.html">COMMUNITY</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
-                        <li><a href="login.html">SIGN IN</a></li>
+                        <li id="sign-in-link"><a href="login.html">SIGN IN</a></li>
                     </ul>
                 </nav>
+                <div class="user-info" id="user-info" style="display: none;">
+                    <span id="welcome-message"></span>
+                    <a href="cart.html" id="cart-button">CART</a>
+                </div>
             </div>    
         </div>
     </header>
@@ -32,19 +36,19 @@
             <form action="#" method="post" class="create-form">
                 <p>Create Account</p>
                 <label for="email">Your E-mail</label><br>
-                <textarea id="email" name="message" rows="1" cols="30" placeholder="Enter your E-mail address"></textarea><br>
+                <input type="email" id="create-email" name="email" placeholder="Enter your E-mail address" required></textarea><br>
                 <label for="set-pass">Create a Password</label><br>
-                <textarea id="set-pass" name="set-pass" rows="1" cols="30" placeholder="Create your Password"></textarea><br>
+                <input type="password" id="set-pass" name="set-pass" placeholder="Create your Password" required></textarea><br>
                 <label for="verify-pass">Verify your Password</label><br>
-                <textarea id="verify-pass" name="verify-pass" rows="1" cols="30" placeholder="Verify your Password"></textarea><br>
+                <input type="password" id="verify-pass" name="verify-pass" placeholder="Verify your Password" required></textarea><br>
                 <button class="post-button" type="submit">Create Account</button>
             </form>
             <form action="#" method="post" class="login-form">
                 <p>Sign In</p>
                 <label for="email">Your E-mail</label><br>
-                <textarea id="email" name="message" rows="1" cols="30" placeholder="Enter your E-mail address"></textarea><br>
+                <input type="email" id="login-email" name="email" placeholder="Enter your E-mail address" required></textarea><br>
                 <label for="enter-pass">Enter your Password</label><br>
-                <textarea id="enter-pass" name="enter-pass" rows="1" cols="30" placeholder="Enter your Password"></textarea><br>
+                <input type="password" id="enter-pass" name="enter-pass" placeholder="Enter your Password" required></textarea><br>
                 <button class="post-button" type="submit">Sign In</button>
             </form>
         </section>
@@ -65,6 +69,7 @@
         <p>&copy; 2025 FakeClothing Co. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="login.js"></script>
 </body>
 </html>

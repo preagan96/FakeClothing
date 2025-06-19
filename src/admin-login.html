@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart|FakeClothing Co.</title>
+    <title>Admin Sign In|FakeClothing Co.</title>
     <link rel="stylesheet" href="style.css">
 </head> 
 <body>
@@ -14,9 +14,19 @@
                 <img src="../public/FakeLogoHeader.png" alt="FakeClothing Logo" class="logo">
             </div>
             <div class="nav-admin">
-                <nav>
-                    <a href="index.html">HOME</a>
-                </nav>
+                <a class="nav-button" href="index.html">SITE-HOME</a>
             </div>    
         </div>
     </header>
+
+    <main class="admin-main">
+        <form action="#" method="post" class="login-admin">
+            <p>Sign In</p>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required></textarea><br>                <label for="enter-pass">Enter your Password</label><br>
+            <input type="password" id="enter-pass" name="enter-pass" placeholder="Enter your Password" required></textarea><br>
+            <button class="admin-signin" type="submit">Sign In</button>
+        </form>
+    </main>
+    <script src="admin-login.js"></script>
+</body>
